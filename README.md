@@ -2,6 +2,10 @@
 
 A simple ToDo web application built with HTML, CSS, and JavaScript that allows users to add events with dates and stores them locally using `localStorage`.
 
+## How to Use
+
+https://athulcoder.github.io/todo-app
+
 ## 🚀 Features
 
 - Add tasks with an associated date
