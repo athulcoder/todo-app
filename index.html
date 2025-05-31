@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO list</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    #hero {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: auto;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    #todo-input {
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: -1px 1px 7px 5px #a1a1a1;
+      background-color: white;
+    }
+
+    #todo-box {
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 400px;
+      overflow-y: scroll;
+      box-shadow: -1px 1px 7px 5px #a1a1a1;
+      background-color: white;
+    }
+    input {
+      width: 200px;
+      height: 40px;
+      padding: 4px 5px;
+      margin-left: 10px;
+    }
+    #add-btn {
+      background-color: rgb(5, 58, 163);
+      border: 2px solid rgb(91, 7, 175);
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      height: 50px;
+    }
+    #todolist {
+      list-style: none;
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      flex-direction: column;
+    }
+    #todolist li {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #e9e9f7;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      justify-content: space-between;
+    }
+  </style>
+  <body bgcolor="#d7d7d7">
+    <div id="hero">
+      <div id="todo-input">
+        <input type="text" id="todoname" placeholder="Todo name" />
+        <input type="date" id="duedate" />
+        <input type="button" value="Add to list" id="add-btn" />
+      </div>
+
+      <section id="todo-box">
+        <ul id="todolist">
+          No Data found
+        </ul>
+      </section>
+
+      <section>
+        <p style="color: rgb(114, 114, 114)">
+          This is simple todolist app can be used for listing the events and
+          works to complete
+        </p>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
